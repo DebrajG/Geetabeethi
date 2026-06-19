@@ -28,7 +28,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Pinyon+Script&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
 
   <!-- ============ Structured data (SEO) ============ -->
   <script type="application/ld+json">
@@ -84,19 +84,20 @@
     html{scroll-behavior:smooth}
     body{
       margin:0;
-      font-family:"Mulish",system-ui,-apple-system,sans-serif;
+      font-family:"EB Garamond",Georgia,serif;
       color:var(--ink);
       background:var(--cream);
-      line-height:1.6;
+      font-size:1.08rem;
+      line-height:1.62;
       -webkit-font-smoothing:antialiased;
       overflow-x:hidden;
     }
-    h1,h2,h3{font-family:"Playfair Display",Georgia,serif;color:var(--navy);line-height:1.15;margin:0}
+    h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;color:var(--navy);line-height:1.1;margin:0;font-weight:600}
     p{margin:0}
     a{color:inherit;text-decoration:none}
     img{max-width:100%;display:block}
     .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
-    .eyebrow{font-family:"Mulish";text-transform:uppercase;letter-spacing:.18em;font-size:.72rem;font-weight:700;color:var(--rose)}
+    .eyebrow{font-family:"EB Garamond",serif;text-transform:uppercase;letter-spacing:.22em;font-size:.9rem;font-weight:600;color:var(--rose)}
     .script{font-family:"Pinyon Script",cursive;color:var(--navy);font-weight:400}
 
     /* sprig divider */
@@ -106,7 +107,7 @@
     /* ============ Buttons ============ */
     .btn{
       display:inline-flex;align-items:center;gap:10px;cursor:pointer;border:none;
-      font-family:"Mulish";font-weight:700;font-size:.82rem;letter-spacing:.06em;
+      font-family:"EB Garamond",serif;font-weight:600;font-size:.98rem;letter-spacing:.14em;
       text-transform:uppercase;padding:15px 26px;border-radius:10px;transition:.25s ease;
     }
     .btn:focus-visible{outline:3px solid var(--rose);outline-offset:3px}
@@ -119,10 +120,9 @@
     /* ============ Header ============ */
     header{position:sticky;top:0;z-index:60;background:rgba(250,246,239,.86);backdrop-filter:blur(10px);border-bottom:1px solid rgba(231,221,205,.6)}
     .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:var(--maxw);margin:0 auto}
-    .brand{display:flex;flex-direction:column;line-height:1}
-    .brand .name{font-family:"Cinzel",serif;font-weight:700;font-size:1.5rem;letter-spacing:.04em;color:var(--navy)}
-    .brand .tag{font-family:"Pinyon Script",cursive;font-size:1.15rem;color:var(--navy);margin-top:2px;display:flex;align-items:center;gap:6px}
-    .brand .tag::before,.brand .tag::after{content:"";height:1px;width:18px;background:var(--rose);opacity:.6}
+    .brand{display:flex;align-items:center}
+    .logo-img{height:54px;width:auto;display:block}
+    .logo-white{filter:brightness(0) invert(1)}
     .nav-actions{display:flex;align-items:center;gap:14px}
     .menu-btn{background:none;border:none;cursor:pointer;width:42px;height:42px;display:grid;place-items:center;color:var(--navy);border-radius:10px}
     .menu-btn:hover{background:rgba(28,43,90,.06)}
@@ -142,9 +142,9 @@
     /* ============ Hero ============ */
     .hero{padding:clamp(40px,6vw,72px) 0 0}
     .hero-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:46px;align-items:center}
-    .hero h1{font-size:clamp(2.4rem,5.2vw,3.7rem);font-weight:700}
-    .hero h1 .pink{color:var(--rose);font-style:italic}
-    .hero .lede{margin-top:22px;font-size:1.06rem;color:var(--ink);font-weight:500}
+    .hero h1{font-size:clamp(3rem,6.4vw,4.5rem);font-weight:600}
+    .hero h1 .pink{color:var(--rose)}
+    .hero .lede{margin-top:22px;font-size:1.28rem;color:var(--navy);font-weight:500;line-height:1.65}
     .hero .lede .since{color:var(--rose);font-weight:700}
     .hero .cta-row{margin-top:30px}
     .media{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:1/0.82;background:
@@ -195,11 +195,11 @@
       display:grid;grid-template-columns:auto 1fr auto;gap:40px;align-items:center;padding:42px 46px;position:relative}
     .rev-score{text-align:center;min-width:160px}
     .rev-score .g{font-weight:700;color:var(--navy);font-size:1.05rem;display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px}
-    .rev-score .num{font-family:"Playfair Display",serif;font-size:2.5rem;color:var(--rose);font-weight:700;line-height:1}
+    .rev-score .num{font-family:"Cormorant Garamond",serif;font-size:3rem;color:var(--rose);font-weight:700;line-height:1}
     .rev-score .stars{color:var(--rose);font-size:1.15rem;letter-spacing:2px}
     .rev-score .based{color:var(--ink-soft);font-size:.9rem;margin-top:8px}
     .rev-body{border-left:1px solid var(--line);padding-left:38px}
-    .rev-body .quote{font-family:"Playfair Display",serif;color:var(--rose);font-size:2.6rem;line-height:0;height:18px;display:block}
+    .rev-body .quote{font-family:"Cormorant Garamond",serif;color:var(--rose);font-size:3rem;line-height:0;height:18px;display:block}
     .rev-body p.txt{color:var(--ink);font-size:1.02rem;margin:6px 0 16px}
     .rev-body .who{color:var(--rose);font-weight:700}
     .rev-body .role{color:var(--ink-soft);font-size:.9rem}
@@ -223,9 +223,7 @@
     /* ============ Footer ============ */
     footer{background:linear-gradient(165deg,var(--navy) 0%,var(--navy-dark) 100%);color:#fff;padding-block:48px 28px;margin-top:var(--space)}
     .foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:30px;align-items:center;text-align:center}
-    .foot-brand .name{font-family:"Cinzel",serif;font-size:1.7rem;letter-spacing:.06em}
-    .foot-brand .tag{font-family:"Pinyon Script",cursive;font-size:1.3rem;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:4px;opacity:.95}
-    .foot-brand .tag::before,.foot-brand .tag::after{content:"";height:1px;width:26px;background:var(--rose)}
+    .foot-brand .logo-img{height:62px;margin:0 auto}
     .foot-col{border-left:1px solid rgba(255,255,255,.16);padding-left:24px}
     .foot-phone{display:inline-flex;align-items:center;gap:10px;font-size:1.4rem;font-weight:700}
     .foot-phone svg{color:var(--rose)}
@@ -293,7 +291,7 @@
       .why-card:last-child{border-bottom:none}
       .two{grid-template-columns:1fr}
       .rev-nav{display:none}
-      .brand .name{font-size:1.25rem}
+      .logo-img{height:44px}
       .btn{padding:13px 20px;font-size:.76rem}
     }
     @media (prefers-reduced-motion:reduce){
@@ -307,8 +305,7 @@
   <header>
     <nav class="nav" aria-label="Primary">
       <a href="#top" class="brand" aria-label="Geetabeethi — A Musical Garden, home">
-        <span class="name">GEETABEETHI</span>
-        <span class="tag">A Musical Garden</span>
+        <img src="images/logo.png" class="logo-img" alt="Geetabeethi — A Musical Garden" width="328" height="72" />
       </a>
       <div class="nav-actions">
         <button class="btn btn-rose" data-open-form data-intent="Enroll Now">
@@ -512,8 +509,7 @@
     <div class="wrap">
       <div class="foot-grid">
         <div class="foot-brand">
-          <div class="name">GEETABEETHI</div>
-          <div class="tag">A Musical Garden</div>
+          <img src="images/logo.png" class="logo-img logo-white" alt="Geetabeethi — A Musical Garden" />
         </div>
         <div class="foot-col">
           <a class="foot-phone" href="tel:+919008088400">
