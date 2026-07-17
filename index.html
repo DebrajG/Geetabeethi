@@ -174,6 +174,10 @@
     .media .ph{padding:20px;font-size:.9rem;font-weight:600}
     .media .ph span{display:block;font-size:.78rem;font-weight:500;opacity:.7;margin-top:6px}
 
+    /* real photographs: framed, cropped, softly lifted off the page */
+    .photo-frame{overflow:hidden;box-shadow:0 24px 60px -18px rgba(11,59,99,.28);border:1px solid rgba(11,59,99,.06)}
+    .photo-frame img{object-fit:cover}
+
     /* ============ Banner strip ============ */
     .strip{margin:clamp(34px,5vw,52px) 0 0}
     .strip-inner{background:var(--pink-tint);border:1px solid var(--pink);border-radius:var(--radius);box-shadow:var(--shadow-sm);
@@ -381,10 +385,9 @@
             </button>
           </div>
         </div>
-        <div class="media">
-          <!-- Replace with: images/hero-musicians.png -->
-          <img src="images/hero-musicians.png" alt="Two musicians performing Indian classical vocal music with tanpura and harmonium" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-          <div class="ph" style="display:none">Hero illustration<span>Save your artwork as images/hero-musicians.png</span></div>
+        <div class="media photo-frame">
+          <img src="images/hero-musicians.jpg" alt="Geetabeethi students performing Indian classical vocal music on stage" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+          <div class="ph" style="display:none">Hero photo<span>Save your photo as images/hero-musicians.jpg</span></div>
         </div>
       </div>
 
@@ -405,9 +408,9 @@
     <!-- ============ Legacy ============ -->
     <section class="legacy" id="legacy" aria-labelledby="legacy-title">
       <div class="wrap legacy-grid">
-        <div class="media">
-          <img src="images/legacy-class.png" alt="Group of students learning vocal music with their teacher" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-          <div class="ph" style="display:none">Classroom illustration<span>Save as images/legacy-class.png</span></div>
+        <div class="media photo-frame">
+          <img src="images/legacy-class.jpg" alt="Geetabeethi students in a group vocal music class" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+          <div class="ph" style="display:none">Classroom photo<span>Save as images/legacy-class.jpg</span></div>
         </div>
         <div>
           <span class="eyebrow">Our Legacy</span>
